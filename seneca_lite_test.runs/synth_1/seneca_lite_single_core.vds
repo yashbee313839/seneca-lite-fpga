@@ -1,0 +1,1045 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 20:00:34 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Apr 30 17:17:10 2024
+# Process ID: 7512
+# Current directory: C:/Users/yashb/seneca-test/seneca_lite_test.runs/synth_1
+# Command line: vivado.exe -log seneca_lite_single_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seneca_lite_single_core.tcl
+# Log file: C:/Users/yashb/seneca-test/seneca_lite_test.runs/synth_1/seneca_lite_single_core.vds
+# Journal file: C:/Users/yashb/seneca-test/seneca_lite_test.runs/synth_1\vivado.jou
+# Running On: YASHBEE-MSI, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 8276 MB
+#-----------------------------------------------------------
+source seneca_lite_single_core.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/yashb/seneca-test/seneca_lite_test.srcs/utils_1/imports/synth_1/ibex_core.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/yashb/seneca-test/seneca_lite_test.srcs/utils_1/imports/synth_1/ibex_core.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top seneca_lite_single_core -part xc7z010iclg225-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7492
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'ADDR_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:367]
+WARNING: [Synth 8-11067] parameter 'BUS_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:368]
+WARNING: [Synth 8-11067] parameter 'BUS_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:369]
+WARNING: [Synth 8-11067] parameter 'BUS_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:370]
+WARNING: [Synth 8-11067] parameter 'IC_SIZE_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:371]
+WARNING: [Synth 8-11067] parameter 'IC_NUM_WAYS' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:372]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:373]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:374]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:375]
+WARNING: [Synth 8-11067] parameter 'IC_NUM_LINES' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:376]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_BEATS' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:377]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_BEATS_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:378]
+WARNING: [Synth 8-11067] parameter 'IC_INDEX_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:379]
+WARNING: [Synth 8-11067] parameter 'IC_INDEX_HI' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:380]
+WARNING: [Synth 8-11067] parameter 'IC_TAG_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:381]
+WARNING: [Synth 8-11067] parameter 'IC_OUTPUT_BEATS' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:382]
+WARNING: [Synth 8-11067] parameter 'SCRAMBLE_KEY_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:384]
+WARNING: [Synth 8-11067] parameter 'SCRAMBLE_NONCE_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:385]
+WARNING: [Synth 8-11067] parameter 'PMP_MAX_REGIONS' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:388]
+WARNING: [Synth 8-11067] parameter 'PMP_CFG_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:389]
+WARNING: [Synth 8-11067] parameter 'PMP_I' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:392]
+WARNING: [Synth 8-11067] parameter 'PMP_I2' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:393]
+WARNING: [Synth 8-11067] parameter 'PMP_D' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:394]
+WARNING: [Synth 8-11067] parameter 'CSR_OFF_PMP_CFG' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:594]
+WARNING: [Synth 8-11067] parameter 'CSR_OFF_PMP_ADDR' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:595]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MIE_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:598]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPIE_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:599]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPP_BIT_LOW' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:600]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPP_BIT_HIGH' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:601]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPRV_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:602]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_TW_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:603]
+WARNING: [Synth 8-11067] parameter 'CSR_MISA_MXL' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:606]
+WARNING: [Synth 8-11067] parameter 'CSR_MSIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:609]
+WARNING: [Synth 8-11067] parameter 'CSR_MTIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:610]
+WARNING: [Synth 8-11067] parameter 'CSR_MEIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:611]
+WARNING: [Synth 8-11067] parameter 'CSR_MFIX_BIT_LOW' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:612]
+WARNING: [Synth 8-11067] parameter 'CSR_MFIX_BIT_HIGH' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:613]
+WARNING: [Synth 8-11067] parameter 'CSR_MSECCFG_MML_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:616]
+WARNING: [Synth 8-11067] parameter 'CSR_MSECCFG_MMWP_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:617]
+WARNING: [Synth 8-11067] parameter 'CSR_MSECCFG_RLB_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:618]
+WARNING: [Synth 8-11067] parameter 'LfsrWidth' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:644]
+WARNING: [Synth 8-11067] parameter 'RndCnstLfsrSeedDefault' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:647]
+WARNING: [Synth 8-11067] parameter 'RndCnstLfsrPermDefault' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:648]
+WARNING: [Synth 8-11067] parameter 'RndCnstIbexKeyDefault' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:651]
+WARNING: [Synth 8-11067] parameter 'RndCnstIbexNonceDefault' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:653]
+WARNING: [Synth 8-11067] parameter 'IbexMuBiOn' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:664]
+WARNING: [Synth 8-11067] parameter 'IbexMuBiOff' declared inside package 'ibex_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/ibex_pkg.sv:665]
+WARNING: [Synth 8-11067] parameter 'ArbiterImpl' declared inside package 'tlul_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/tlul_pkg.sv:14]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SBOX4' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:23]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SBOX4_INV' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:28]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SHIFT_ROWS64' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:33]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SHIFT_ROWS64_INV' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:38]
+WARNING: [Synth 8-11067] parameter 'PRINCE_ROUND_CONST' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:44]
+WARNING: [Synth 8-11067] parameter 'PRINCE_ALPHA_CONST' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:58]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SHIFT_ROWS_CONST0' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:61]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SHIFT_ROWS_CONST1' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:62]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SHIFT_ROWS_CONST2' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:63]
+WARNING: [Synth 8-11067] parameter 'PRINCE_SHIFT_ROWS_CONST3' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:64]
+WARNING: [Synth 8-11067] parameter 'PRESENT_SBOX4' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:141]
+WARNING: [Synth 8-11067] parameter 'PRESENT_SBOX4_INV' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:146]
+WARNING: [Synth 8-11067] parameter 'PRESENT_PERM32' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:153]
+WARNING: [Synth 8-11067] parameter 'PRESENT_PERM32_INV' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:162]
+WARNING: [Synth 8-11067] parameter 'PRESENT_PERM64' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:172]
+WARNING: [Synth 8-11067] parameter 'PRESENT_PERM64_INV' declared inside package 'prim_cipher_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/new/prim_cipher_pkg.sv:189]
+WARNING: [Synth 8-11067] parameter 'RAM_1P_CFG_DEFAULT' declared inside package 'prim_ram_1p_pkg' shall be treated as localparam [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_ram_1p_pkg.sv:18]
+INFO: [Synth 8-11241] undeclared symbol 'IO_RST_IN', assumed default net type 'wire' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/Thesis/seneca_lite_single_core.sv:350]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 818.527 ; gain = 407.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'seneca_lite_single_core' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/Thesis/seneca_lite_single_core.sv:33]
+INFO: [Synth 8-6157] synthesizing module 'ibex_core' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_core.sv:16]
+	Parameter PMPEnable bound to: 1'b0 
+	Parameter PMPGranularity bound to: 32'b00000000000000000000000000000000 
+	Parameter PMPNumRegions bound to: 32'b00000000000000000000000000000100 
+	Parameter MHPMCounterNum bound to: 32'b00000000000000000000000000000000 
+	Parameter MHPMCounterWidth bound to: 32'b00000000000000000000000000101000 
+	Parameter RV32E bound to: 1'b0 
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter BranchTargetALU bound to: 1'b0 
+	Parameter WritebackStage bound to: 1'b0 
+	Parameter ICache bound to: 1'b0 
+	Parameter ICacheECC bound to: 1'b0 
+	Parameter BranchPredictor bound to: 1'b0 
+	Parameter DbgTriggerEn bound to: 1'b0 
+	Parameter SecureIbex bound to: 1'b0 
+	Parameter DmHaltAddr bound to: 437323776 - type: integer 
+	Parameter DmExceptionAddr bound to: 437323784 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibex_if_stage' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_if_stage.sv:16]
+	Parameter DmHaltAddr bound to: 437323776 - type: integer 
+	Parameter DmExceptionAddr bound to: 437323784 - type: integer 
+	Parameter DummyInstructions bound to: 1'b0 
+	Parameter ICache bound to: 1'b0 
+	Parameter ICacheECC bound to: 1'b0 
+	Parameter BusSizeECC bound to: 32'b00000000000000000000000000100000 
+	Parameter TagSizeECC bound to: 32'b00000000000000000000000000010110 
+	Parameter LineSizeECC bound to: 32'b00000000000000000000000001000000 
+	Parameter PCIncrCheck bound to: 1'b0 
+	Parameter ResetAll bound to: 1'b0 
+	Parameter RndCnstLfsrSeed bound to: -1403831308 - type: integer 
+	Parameter RndCnstLfsrPerm bound to: 160'b0001111000110101111011001011101001000110011111111101000110110001001011101001010110000001010100101100000001001111101001000011100001111000101010001101101011101101 
+	Parameter BranchPredictor bound to: 1'b0 
+	Parameter MemECC bound to: 1'b0 
+	Parameter MemDataWidth bound to: 32'b00000000000000000000000000100000 
+INFO: [Synth 8-6157] synthesizing module 'ibex_prefetch_buffer' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_prefetch_buffer.sv:12]
+	Parameter ResetAll bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'ibex_fetch_fifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_fetch_fifo.sv:15]
+	Parameter NUM_REQS bound to: 32'b00000000000000000000000000000010 
+	Parameter ResetAll bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_fetch_fifo' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_fetch_fifo.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_prefetch_buffer' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_prefetch_buffer.sv:12]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_if_stage.sv:192]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_if_stage.sv:192]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_if_stage.sv:208]
+INFO: [Synth 8-6157] synthesizing module 'ibex_compressed_decoder' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:16]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:42]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:42]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:45]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:45]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:86]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:86]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:124]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:142]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:142]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:208]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:208]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_compressed_decoder' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_compressed_decoder.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_if_stage' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_if_stage.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'ibex_id_stage' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:20]
+	Parameter RV32E bound to: 1'b0 
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter DataIndTiming bound to: 1'b0 
+	Parameter BranchTargetALU bound to: 1'b0 
+	Parameter WritebackStage bound to: 1'b0 
+	Parameter BranchPredictor bound to: 1'b0 
+	Parameter MemECC bound to: 1'b0 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:371]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:313]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:313]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:420]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:420]
+INFO: [Synth 8-6157] synthesizing module 'ibex_decoder' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:16]
+	Parameter RV32E bound to: 1'b0 
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter BranchTargetALU bound to: 1'b0 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:237]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:277]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:306]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:323]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:354]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:354]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:363]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:379]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:404]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:456]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:566]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:594]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:630]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:690]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:742]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:823]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:823]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:993]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:1141]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_decoder' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_decoder.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'ibex_controller' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_controller.sv:13]
+	Parameter WritebackStage bound to: 1'b0 
+	Parameter BranchPredictor bound to: 1'b0 
+	Parameter MemECC bound to: 1'b0 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_controller.sv:494]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_controller.sv:757]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_controller' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_controller.sv:13]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:804]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:804]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:806]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_id_stage' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_id_stage.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'ibex_ex_block' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_ex_block.sv:11]
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter BranchTargetALU bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'ibex_multdiv_fast' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_multdiv_fast.sv:17]
+	Parameter RV32M bound to: 2 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_multdiv_fast.sv:288]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_multdiv_fast.sv:288]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_multdiv_fast.sv:418]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_multdiv_fast' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_multdiv_fast.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ibex_alu' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:9]
+	Parameter RV32B bound to: 0 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:60]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:85]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:97]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:120]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:160]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:305]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:372]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:392]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:1322]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_alu' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_alu.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_ex_block' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_ex_block.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_load_store_unit' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:17]
+	Parameter MemECC bound to: 1'b0 
+	Parameter MemDataWidth bound to: 32'b00000000000000000000000000100000 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:119]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:119]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:122]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:122]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:130]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:130]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:142]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:142]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:156]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:156]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:176]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:176]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:229]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:229]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:244]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:244]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:283]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:283]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:322]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:322]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:383]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_load_store_unit' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_load_store_unit.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ibex_wb_stage' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_wb_stage.sv:17]
+	Parameter ResetAll bound to: 1'b0 
+	Parameter WritebackStage bound to: 1'b0 
+	Parameter DummyInstructions bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_wb_stage' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_wb_stage.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ibex_cs_registers' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_cs_registers.sv:12]
+	Parameter DbgTriggerEn bound to: 1'b0 
+	Parameter DbgHwBreakNum bound to: 32'b00000000000000000000000000000001 
+	Parameter DataIndTiming bound to: 1'b0 
+	Parameter DummyInstructions bound to: 1'b0 
+	Parameter ShadowCSR bound to: 1'b0 
+	Parameter ICache bound to: 1'b0 
+	Parameter MHPMCounterNum bound to: 32'b00000000000000000000000000000000 
+	Parameter MHPMCounterWidth bound to: 32'b00000000000000000000000000101000 
+	Parameter PMPEnable bound to: 1'b0 
+	Parameter PMPGranularity bound to: 32'b00000000000000000000000000000000 
+	Parameter PMPNumRegions bound to: 32'b00000000000000000000000000000100 
+	Parameter RV32E bound to: 1'b0 
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_cs_registers.sv:330]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_cs_registers.sv:605]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_cs_registers.sv:711]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_cs_registers.sv:714]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_cs_registers.sv:822]
+INFO: [Synth 8-226] default block is never used [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_cs_registers.sv:822]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000000110 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 6'b010000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized0' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000100000 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized0' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized1' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000010010 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 18'b000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized1' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized2' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000000111 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 7'b0000000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized2' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized3' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000100000 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized3' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized4' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000100000 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 32'b01000000000000000000000000000011 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized4' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized5' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000000011 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized5' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'ibex_counter' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_counter.sv:1]
+	Parameter CounterWidth bound to: 32'sb00000000000000000000000001000000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_counter' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ibex_counter__parameterized0' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_counter.sv:1]
+	Parameter CounterWidth bound to: 32'sb00000000000000000000000001000000 
+	Parameter ProvideValUpd bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_counter__parameterized0' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized6' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+	Parameter Width bound to: 32'b00000000000000000000000000001000 
+	Parameter ShadowCopy bound to: 1'b0 
+	Parameter ResetValue bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized6' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_csr.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_cs_registers' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_cs_registers.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'ibex_core' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_core.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'prim_ram_1p_adv' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_ram_1p_adv.sv:18]
+	Parameter Depth bound to: 32'sb00000000000000000001000000000000 
+	Parameter Width bound to: 32'sb00000000000000000000000000100000 
+	Parameter MemInitFile bound to: (null) - type: string 
+INFO: [Synth 8-6157] synthesizing module 'prim_ram_1p' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/imports/prim/prim_ram_1p.sv:11]
+	Parameter Width bound to: 32'sb00000000000000000000000000100000 
+	Parameter Depth bound to: 32'sb00000000000000000001000000000000 
+	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000000001 
+	Parameter MemInitFile bound to: (null) - type: string 
+INFO: [Synth 8-6157] synthesizing module 'prim_generic_ram_1p' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_generic_ram_1p.sv:9]
+	Parameter Width bound to: 32'sb00000000000000000000000000100000 
+	Parameter Depth bound to: 32'sb00000000000000000001000000000000 
+	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000000001 
+	Parameter MemInitFile bound to: (null) - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'prim_generic_ram_1p' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_generic_ram_1p.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'prim_ram_1p' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/imports/prim/prim_ram_1p.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'prim_ram_1p_adv' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_ram_1p_adv.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'tlul_adapter_sram' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:14]
+	Parameter SramAw bound to: 32'sb00000000000000000000000000001110 
+	Parameter SramDw bound to: 32'sb00000000000000000000000000100000 
+	Parameter Outstanding bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'tlul_err' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/imports/Thesis/tlul/rtl/tlul_err.sv:8]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/imports/Thesis/tlul/rtl/tlul_err.sv:61]
+INFO: [Synth 8-6155] done synthesizing module 'tlul_err' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/imports/Thesis/tlul/rtl/tlul_err.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'prim_fifo_sync' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+	Parameter Width bound to: 32'b00000000000000000000000000001101 
+	Parameter Pass bound to: 1'b0 
+	Parameter Depth bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'prim_fifo_sync_cnt' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync_cnt.sv:9]
+	Parameter Depth bound to: 32'sb00000000000000000000000000000010 
+	Parameter Width bound to: 32'sb00000000000000000000000000000010 
+	Parameter Secure bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'prim_fifo_sync_cnt' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync_cnt.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'prim_fifo_sync' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+WARNING: [Synth 8-7071] port 'full_o' of module 'prim_fifo_sync' is unconnected for instance 'u_reqfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:290]
+WARNING: [Synth 8-7071] port 'err_o' of module 'prim_fifo_sync' is unconnected for instance 'u_reqfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:290]
+WARNING: [Synth 8-7023] instance 'u_reqfifo' of module 'prim_fifo_sync' has 12 connections declared, but only 10 given [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:290]
+INFO: [Synth 8-6157] synthesizing module 'prim_fifo_sync__parameterized0' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+	Parameter Width bound to: 32'b00000000000000000000000000000101 
+	Parameter Pass bound to: 1'b0 
+	Parameter Depth bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'prim_fifo_sync__parameterized0' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+WARNING: [Synth 8-7071] port 'full_o' of module 'prim_fifo_sync' is unconnected for instance 'u_sramreqfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:311]
+WARNING: [Synth 8-7071] port 'err_o' of module 'prim_fifo_sync' is unconnected for instance 'u_sramreqfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:311]
+WARNING: [Synth 8-7023] instance 'u_sramreqfifo' of module 'prim_fifo_sync' has 12 connections declared, but only 10 given [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:311]
+INFO: [Synth 8-6157] synthesizing module 'prim_fifo_sync__parameterized1' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+	Parameter Width bound to: 32'b00000000000000000000000000100001 
+	Parameter Pass bound to: 1'b1 
+	Parameter Depth bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'prim_fifo_sync__parameterized1' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+WARNING: [Synth 8-7071] port 'full_o' of module 'prim_fifo_sync' is unconnected for instance 'u_rspfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:334]
+WARNING: [Synth 8-7071] port 'err_o' of module 'prim_fifo_sync' is unconnected for instance 'u_rspfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:334]
+WARNING: [Synth 8-7023] instance 'u_rspfifo' of module 'prim_fifo_sync' has 12 connections declared, but only 10 given [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:334]
+INFO: [Synth 8-6155] done synthesizing module 'tlul_adapter_sram' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'prim_ram_1p_adv__parameterized0' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_ram_1p_adv.sv:18]
+	Parameter Depth bound to: 32'sb00000000000000000100000000000000 
+	Parameter Width bound to: 32'sb00000000000000000000000000100000 
+	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000001000 
+	Parameter EnableParity bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'prim_ram_1p__parameterized0' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/imports/prim/prim_ram_1p.sv:11]
+	Parameter Width bound to: 32'sb00000000000000000000000000100000 
+	Parameter Depth bound to: 32'sb00000000000000000100000000000000 
+	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000001000 
+	Parameter MemInitFile bound to: (null) - type: string 
+INFO: [Synth 8-6157] synthesizing module 'prim_generic_ram_1p__parameterized0' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_generic_ram_1p.sv:9]
+	Parameter Width bound to: 32'sb00000000000000000000000000100000 
+	Parameter Depth bound to: 32'sb00000000000000000100000000000000 
+	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000001000 
+	Parameter MemInitFile bound to: (null) - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'prim_generic_ram_1p__parameterized0' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_generic_ram_1p.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'prim_ram_1p__parameterized0' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/imports/prim/prim_ram_1p.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'prim_ram_1p_adv__parameterized0' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_ram_1p_adv.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'tlul_adapter_sram__parameterized0' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:14]
+	Parameter SramAw bound to: 32'sb00000000000000000000000000010000 
+	Parameter SramDw bound to: 32'sb00000000000000000000000000100000 
+	Parameter Outstanding bound to: 32'sb00000000000000000000000000000010 
+WARNING: [Synth 8-7071] port 'full_o' of module 'prim_fifo_sync' is unconnected for instance 'u_reqfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:290]
+WARNING: [Synth 8-7071] port 'err_o' of module 'prim_fifo_sync' is unconnected for instance 'u_reqfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:290]
+WARNING: [Synth 8-7023] instance 'u_reqfifo' of module 'prim_fifo_sync' has 12 connections declared, but only 10 given [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:290]
+WARNING: [Synth 8-7071] port 'full_o' of module 'prim_fifo_sync' is unconnected for instance 'u_sramreqfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:311]
+WARNING: [Synth 8-7071] port 'err_o' of module 'prim_fifo_sync' is unconnected for instance 'u_sramreqfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:311]
+WARNING: [Synth 8-7023] instance 'u_sramreqfifo' of module 'prim_fifo_sync' has 12 connections declared, but only 10 given [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:311]
+WARNING: [Synth 8-7071] port 'full_o' of module 'prim_fifo_sync' is unconnected for instance 'u_rspfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:334]
+WARNING: [Synth 8-7071] port 'err_o' of module 'prim_fifo_sync' is unconnected for instance 'u_rspfifo' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:334]
+WARNING: [Synth 8-7023] instance 'u_rspfifo' of module 'prim_fifo_sync' has 12 connections declared, but only 10 given [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:334]
+INFO: [Synth 8-6155] done synthesizing module 'tlul_adapter_sram__parameterized0' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_sram.sv:14]
+WARNING: [Synth 8-689] width (17) of port connection 'addr_o' does not match port width (16) of module 'tlul_adapter_sram' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/Thesis/seneca_lite_single_core.sv:287]
+INFO: [Synth 8-6157] synthesizing module 'tlul_adapter_host' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/imports/Thesis/tlul/rtl/tlul_adapter_host.sv:24]
+	Parameter MAX_REQS bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'tlul_adapter_host' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/imports/Thesis/tlul/rtl/tlul_adapter_host.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'noc_itf' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/noc_itf.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'tlul_adapter_reg' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_reg.sv:11]
+	Parameter RegAw bound to: 32'sb00000000000000000000000000001000 
+	Parameter RegDw bound to: 32'sb00000000000000000000000000101000 
+INFO: [Synth 8-6155] done synthesizing module 'tlul_adapter_reg' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_adapter_reg.sv:11]
+WARNING: [Synth 8-689] width (1) of port connection 'addr_o' does not match port width (8) of module 'tlul_adapter_reg' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/noc_itf.sv:52]
+WARNING: [Synth 8-689] width (4) of port connection 'be_o' does not match port width (5) of module 'tlul_adapter_reg' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/noc_itf.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'prim_fifo_async' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_async.sv:9]
+	Parameter Width bound to: 32'b00000000000000000000000000100000 
+	Parameter Depth bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6157] synthesizing module 'prim_flop_2sync' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_flop_2sync.sv:9]
+	Parameter Width bound to: 32'sb00000000000000000000000000000011 
+INFO: [Synth 8-6157] synthesizing module 'prim_flop' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/prim/prim_flop.sv:11]
+	Parameter Width bound to: 32'sb00000000000000000000000000000011 
+	Parameter ResetValue bound to: 3'b000 
+INFO: [Synth 8-6157] synthesizing module 'prim_generic_flop' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_generic_flop.sv:7]
+	Parameter Width bound to: 32'sb00000000000000000000000000000011 
+	Parameter ResetValue bound to: 3'b000 
+INFO: [Synth 8-6155] done synthesizing module 'prim_generic_flop' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_generic_flop.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'prim_flop' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/prim/prim_flop.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'prim_flop_2sync' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_flop_2sync.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'prim_fifo_async' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_async.sv:9]
+WARNING: [Synth 8-689] width (1) of port connection 'rdepth_o' does not match port width (3) of module 'prim_fifo_async' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/noc_itf.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'prim_fifo_async__parameterized0' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_async.sv:9]
+	Parameter Width bound to: 32'b00000000000000000000000000101000 
+	Parameter Depth bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'prim_fifo_async__parameterized0' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_async.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'noc_itf' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/new/noc_itf.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'xbar_main' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/autogen/xbar_main.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'tlul_socket_1n' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_socket_1n.sv:39]
+	Parameter N bound to: 32'b00000000000000000000000000000011 
+	Parameter HReqDepth bound to: 4'b0000 
+	Parameter HRspDepth bound to: 4'b0000 
+	Parameter DReqDepth bound to: 12'b000000000000 
+	Parameter DRspDepth bound to: 12'b000000000000 
+INFO: [Synth 8-6157] synthesizing module 'tlul_fifo_sync' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_fifo_sync.sv:9]
+	Parameter ReqPass bound to: 1'b1 
+	Parameter RspPass bound to: 1'b1 
+	Parameter ReqDepth bound to: 32'b00000000000000000000000000000000 
+	Parameter RspDepth bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'prim_fifo_sync__parameterized2' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+	Parameter Width bound to: 32'b00000000000000000000000001100101 
+	Parameter Pass bound to: 1'b1 
+	Parameter Depth bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'prim_fifo_sync__parameterized2' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'prim_fifo_sync__parameterized3' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+	Parameter Width bound to: 32'b00000000000000000000000001000011 
+	Parameter Pass bound to: 1'b1 
+	Parameter Depth bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'prim_fifo_sync__parameterized3' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'tlul_fifo_sync' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_fifo_sync.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'tlul_fifo_sync__parameterized0' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_fifo_sync.sv:9]
+	Parameter ReqPass bound to: 1'b1 
+	Parameter RspPass bound to: 1'b1 
+	Parameter ReqDepth bound to: 0 - type: integer 
+	Parameter RspDepth bound to: 0 - type: integer 
+	Parameter SpareReqW bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6157] synthesizing module 'prim_fifo_sync__parameterized4' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+	Parameter Width bound to: 32'b00000000000000000000000001100110 
+	Parameter Pass bound to: 1'b1 
+	Parameter Depth bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'prim_fifo_sync__parameterized4' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_fifo_sync.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'tlul_fifo_sync__parameterized0' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_fifo_sync.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'tlul_err_resp' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_err_resp.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'tlul_err_resp' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_err_resp.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'tlul_socket_1n' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_socket_1n.sv:39]
+INFO: [Synth 8-6157] synthesizing module 'tlul_socket_m1' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_socket_m1.sv:25]
+	Parameter M bound to: 32'b00000000000000000000000000000011 
+	Parameter HReqDepth bound to: 12'b000000000000 
+	Parameter HRspDepth bound to: 12'b000000000000 
+	Parameter DReqDepth bound to: 4'b0000 
+	Parameter DRspDepth bound to: 4'b0000 
+INFO: [Synth 8-6157] synthesizing module 'prim_arbiter_ppc' [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_arbiter_ppc.sv:27]
+	Parameter N bound to: 32'b00000000000000000000000000000011 
+	Parameter DW bound to: 32'b00000000000000000000000001100110 
+INFO: [Synth 8-6155] done synthesizing module 'prim_arbiter_ppc' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/prim_arbiter_ppc.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'tlul_socket_m1' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/tlul_socket_m1.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'xbar_main' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/autogen/xbar_main.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'seneca_lite_single_core' (0#1) [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/Thesis/seneca_lite_single_core.sv:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mhpmcounter_incr_reg' and it is trimmed from '32' to '3' bits. [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/rtl/ibex_cs_registers.sv:1287]
+WARNING: [Synth 8-3848] Net IO_RST_IN in module/entity seneca_lite_single_core does not have driver. [C:/Users/yashb/seneca-test/seneca_lite_test.srcs/sources_1/imports/Thesis/seneca_lite_single_core.sv:350]
+WARNING: [Synth 8-7129] Port tl_h_i[a_param][2] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_param][1] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_param][0] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][31] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][30] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][29] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][28] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][27] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][26] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][25] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][24] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][23] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][22] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][21] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][20] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][19] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][18] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][17] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][16] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][15] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][14] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][13] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][12] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][11] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][10] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][9] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][8] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][7] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][6] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][5] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][4] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][3] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][2] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][1] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_address][0] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_mask][3] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_mask][2] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_mask][1] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_mask][0] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][31] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][30] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][29] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][28] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][27] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][26] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][25] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][24] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][23] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][22] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][21] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][20] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][19] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][18] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][17] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][16] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][15] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][14] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][13] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][12] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][11] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][10] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][9] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][8] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][7] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][6] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][5] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][4] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][3] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][2] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][1] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_data][0] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][rsvd1][6] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][rsvd1][5] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][rsvd1][4] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][rsvd1][3] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][rsvd1][2] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][rsvd1][1] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][rsvd1][0] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][parity_en] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][parity][7] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][parity][6] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][parity][5] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][parity][4] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][parity][3] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][parity][2] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][parity][1] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[a_user][parity][0] in module tlul_err_resp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_i in module prim_fifo_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_ni in module prim_fifo_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr_i in module prim_fifo_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_i in module prim_fifo_sync__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_ni in module prim_fifo_sync__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr_i in module prim_fifo_sync__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_i in module prim_fifo_sync__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_ni in module prim_fifo_sync__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr_i in module prim_fifo_sync__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_chk_i in module prim_arbiter_ppc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[0][a_source][7] in module tlul_socket_m1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[0][a_source][6] in module tlul_socket_m1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tl_h_i[1][a_source][7] in module tlul_socket_m1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 969.430 ; gain = 558.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 969.430 ; gain = 558.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 969.430 ; gain = 558.695
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Synth 8-802] inferred FSM for state register 'md_state_q_reg' in module 'ibex_multdiv_fast'
+INFO: [Synth 8-802] inferred FSM for state register 'ls_fsm_cs_reg' in module 'ibex_load_store_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 MD_IDLE |                              000 |                              000
+                MD_ABS_A |                              001 |                              001
+                MD_ABS_B |                              010 |                              010
+                 MD_COMP |                              011 |                              011
+                 MD_LAST |                              100 |                              100
+          MD_CHANGE_SIGN |                              101 |                              101
+               MD_FINISH |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'md_state_q_reg' using encoding 'sequential' in module 'ibex_multdiv_fast'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+            WAIT_GNT_MIS |                              001 |                              001
+         WAIT_RVALID_MIS |                              010 |                              010
+WAIT_RVALID_MIS_GNTS_DONE |                              011 |                              100
+                WAIT_GNT |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ls_fsm_cs_reg' using encoding 'sequential' in module 'ibex_load_store_unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.977 ; gain = 702.242
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 2     
+	   2 Input   34 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 2     
+	   3 Input    3 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 12    
+	   3 Input    2 Bit       Adders := 12    
+	   2 Input    1 Bit       Adders := 2     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      3 Bit         XORs := 11    
+	   2 Input      2 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               34 Bit    Registers := 2     
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 21    
+	               31 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 4     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 25    
+	                2 Bit    Registers := 25    
+	                1 Bit    Registers := 46    
++---RAMs : 
+	             512K Bit	(16384 X 32 bit)          RAMs := 1     
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
+	              160 Bit	(4 X 40 bit)          RAMs := 1     
+	              128 Bit	(4 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  102 Bit        Muxes := 9     
+	   3 Input   64 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 5     
+	   2 Input   40 Bit        Muxes := 1     
+	   4 Input   34 Bit        Muxes := 2     
+	   2 Input   34 Bit        Muxes := 9     
+	   7 Input   33 Bit        Muxes := 1     
+	   4 Input   33 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 8     
+	   3 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 142   
+	   3 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 19    
+	  11 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 1     
+	  20 Input   32 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 5     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 4     
+	  16 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 17    
+	   4 Input    8 Bit        Muxes := 3     
+	   8 Input    6 Bit        Muxes := 1     
+	  10 Input    6 Bit        Muxes := 1     
+	  54 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 10    
+	  11 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   7 Input    5 Bit        Muxes := 1     
+	  57 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   6 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	  16 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 55    
+	   3 Input    3 Bit        Muxes := 1     
+	  12 Input    3 Bit        Muxes := 2     
+	  11 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 9     
+	   5 Input    3 Bit        Muxes := 4     
+	   7 Input    3 Bit        Muxes := 2     
+	  16 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 67    
+	  12 Input    2 Bit        Muxes := 5     
+	  14 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 11    
+	  11 Input    2 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 186   
+	   7 Input    1 Bit        Muxes := 13    
+	   5 Input    1 Bit        Muxes := 16    
+	   8 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 47    
+	   3 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 9     
+	  14 Input    1 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 21    
+	  53 Input    1 Bit        Muxes := 2     
+	  11 Input    1 Bit        Muxes := 21    
+	   9 Input    1 Bit        Muxes := 1     
+	  58 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mac_res_signed, operation Mode is: C+A*B.
+DSP Report: operator mac_res_signed is absorbed into DSP mac_res_signed.
+DSP Report: operator mac_res_signed0 is absorbed into DSP mac_res_signed.
+WARNING: [Synth 8-6841] Block RAM (u_mem/gen_generic.u_impl_generic/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (1) is not a multiple of 8(data_only) or 9(data + parity))
+WARNING: [Synth 8-6841] Block RAM (u_mem/gen_generic.u_impl_generic/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+WARNING: [Synth 8-3332] Sequential element (gen_multdiv_fast.multdiv_i/FSM_sequential_md_state_q_reg[2]) is unused and will be removed from module ibex_ex_block.
+WARNING: [Synth 8-3332] Sequential element (gen_multdiv_fast.multdiv_i/FSM_sequential_md_state_q_reg[1]) is unused and will be removed from module ibex_ex_block.
+WARNING: [Synth 8-3332] Sequential element (gen_multdiv_fast.multdiv_i/FSM_sequential_md_state_q_reg[0]) is unused and will be removed from module ibex_ex_block.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1148.305 ; gain = 737.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|u_ram_instr | u_mem/gen_generic.u_impl_generic/mem_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 32     | 0      | 
++------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                                | Inference | Size (Depth x Width) | Primitives  | 
++------------+-------------------------------------------+-----------+----------------------+-------------+
+|u_noc_itf   | u_noc_send_fifo/g_storage_mux.storage_reg | Implied   | 4 x 32               | RAM32M x 7  | 
++------------+-------------------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ibex_multdiv_fast | C+A*B       | 17     | 17     | 34     | -      | 34     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1148.305 ; gain = 737.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|u_ram_instr | u_mem/gen_generic.u_impl_generic/mem_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 32     | 0      | 
++------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                                | Inference | Size (Depth x Width) | Primitives  | 
++------------+-------------------------------------------+-----------+----------------------+-------------+
+|u_noc_itf   | u_noc_send_fifo/g_storage_mux.storage_reg | Implied   | 4 x 32               | RAM32M x 7  | 
++------------+-------------------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (u_core/load_store_unit_i/FSM_sequential_ls_fsm_cs_reg[2]) is unused and will be removed from module seneca_lite_single_core.
+WARNING: [Synth 8-3332] Sequential element (u_core/load_store_unit_i/FSM_sequential_ls_fsm_cs_reg[1]) is unused and will be removed from module seneca_lite_single_core.
+WARNING: [Synth 8-3332] Sequential element (u_core/load_store_unit_i/FSM_sequential_ls_fsm_cs_reg[0]) is unused and will be removed from module seneca_lite_single_core.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_ram_instr/u_mem/gen_generic.u_impl_generic/mem_reg_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1151.320 ; gain = 740.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1151.320 ; gain = 740.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1151.320 ; gain = 740.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1151.320 ; gain = 740.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1151.320 ; gain = 740.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1151.320 ; gain = 740.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1151.320 ; gain = 740.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     9|
+|3     |LUT2     |    85|
+|4     |LUT3     |    24|
+|5     |LUT4     |    35|
+|6     |LUT5     |    74|
+|7     |LUT6     |   119|
+|8     |RAM32M   |     5|
+|9     |RAM32X1D |     2|
+|10    |RAMB18E1 |    32|
+|11    |FDCE     |    78|
+|12    |FDPE     |     1|
+|13    |FDRE     |   100|
+|14    |IBUF     |    73|
+|15    |OBUF     |   109|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+----------------------------------+------+
+|      |Instance                               |Module                            |Cells |
++------+---------------------------------------+----------------------------------+------+
+|1     |top                                    |                                  |   747|
+|2     |  u_ram_data                           |prim_ram_1p_adv__parameterized0   |     1|
+|3     |  u_noc_itf                            |noc_itf                           |   128|
+|4     |    u_noc_receive_fifo                 |prim_fifo_async                   |    40|
+|5     |      sync_rptr                        |prim_flop_2sync_15                |     6|
+|6     |        u_sync_1                       |prim_flop_21                      |     3|
+|7     |          \gen_generic.u_impl_generic  |prim_generic_flop_24              |     3|
+|8     |        u_sync_2                       |prim_flop_22                      |     3|
+|9     |          \gen_generic.u_impl_generic  |prim_generic_flop_23              |     3|
+|10    |      sync_wptr                        |prim_flop_2sync_16                |     8|
+|11    |        u_sync_1                       |prim_flop_17                      |     3|
+|12    |          \gen_generic.u_impl_generic  |prim_generic_flop_20              |     3|
+|13    |        u_sync_2                       |prim_flop_18                      |     5|
+|14    |          \gen_generic.u_impl_generic  |prim_generic_flop_19              |     5|
+|15    |    u_noc_send_fifo                    |prim_fifo_async__parameterized0   |    82|
+|16    |      sync_rptr                        |prim_flop_2sync                   |     6|
+|17    |        u_sync_1                       |prim_flop_11                      |     3|
+|18    |          \gen_generic.u_impl_generic  |prim_generic_flop_14              |     3|
+|19    |        u_sync_2                       |prim_flop_12                      |     3|
+|20    |          \gen_generic.u_impl_generic  |prim_generic_flop_13              |     3|
+|21    |      sync_wptr                        |prim_flop_2sync_8                 |     7|
+|22    |        u_sync_1                       |prim_flop                         |     4|
+|23    |          \gen_generic.u_impl_generic  |prim_generic_flop_10              |     4|
+|24    |        u_sync_2                       |prim_flop_9                       |     3|
+|25    |          \gen_generic.u_impl_generic  |prim_generic_flop                 |     3|
+|26    |    u_tlul_adapter_reg                 |tlul_adapter_reg                  |     6|
+|27    |  u_ram_instr                          |prim_ram_1p_adv                   |   106|
+|28    |    u_mem                              |prim_ram_1p                       |   105|
+|29    |      \gen_generic.u_impl_generic      |prim_generic_ram_1p               |   105|
+|30    |  u_tl_adapter_ram_data                |tlul_adapter_sram__parameterized0 |    75|
+|31    |    u_reqfifo                          |prim_fifo_sync_2                  |    31|
+|32    |      \gen_normal_fifo.u_fifo_cnt      |prim_fifo_sync_cnt_7              |    19|
+|33    |    u_rspfifo                          |prim_fifo_sync__parameterized1_3  |     9|
+|34    |      \gen_normal_fifo.u_fifo_cnt      |prim_fifo_sync_cnt_6              |     9|
+|35    |    u_sramreqfifo                      |prim_fifo_sync__parameterized0_4  |    35|
+|36    |      \gen_normal_fifo.u_fifo_cnt      |prim_fifo_sync_cnt_5              |    35|
+|37    |  u_tl_adapter_ram_instr               |tlul_adapter_sram                 |   253|
+|38    |    u_reqfifo                          |prim_fifo_sync                    |    93|
+|39    |      \gen_normal_fifo.u_fifo_cnt      |prim_fifo_sync_cnt_1              |    61|
+|40    |    u_rspfifo                          |prim_fifo_sync__parameterized1    |   109|
+|41    |      \gen_normal_fifo.u_fifo_cnt      |prim_fifo_sync_cnt_0              |    45|
+|42    |    u_sramreqfifo                      |prim_fifo_sync__parameterized0    |    51|
+|43    |      \gen_normal_fifo.u_fifo_cnt      |prim_fifo_sync_cnt                |    43|
++------+---------------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1151.320 ; gain = 740.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1400 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1151.320 ; gain = 740.586
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1151.320 ; gain = 740.586
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1154.133 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1230.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+Synth Design complete, checksum: 4d552d9a
+INFO: [Common 17-83] Releasing license: Synthesis
+251 Infos, 198 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1230.551 ; gain = 829.633
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yashb/seneca-test/seneca_lite_test.runs/synth_1/seneca_lite_single_core.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file seneca_lite_single_core_utilization_synth.rpt -pb seneca_lite_single_core_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 17:17:46 2024...

@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010iclg225-1L" LaunchTime="1714490227" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ibex_core.dcp">
+  <File Type="PA-TCL" Name="seneca_lite_single_core.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="seneca_lite_single_core_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="seneca_lite_single_core_reports.tcl"/>
+  <File Type="RDS-RDS" Name="seneca_lite_single_core.vds"/>
+  <File Type="RDS-UTIL" Name="seneca_lite_single_core_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="seneca_lite_single_core_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="seneca_lite_single_core.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="seneca_lite_single_core_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="seneca_lite_single_core_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/ibex_pkg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/new/ibex_pkg.sv"/>
+        <Attr Name="ImportTime" Val="1701350910"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_alu.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_alu.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_assert.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_flop_macros.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_flop_macros.sv"/>
+        <Attr Name="ImportTime" Val="1700748731"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_assert_dummy_macros.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert_dummy_macros.svh"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_assert_sec_cm.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert_sec_cm.svh"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Thesis/ibex/rtl/ibex_branch_predict.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_branch_predict.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_compressed_decoder.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_compressed_decoder.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/dv_utils/dv_fcov_macros.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/vendor/lowrisc_ip/dv/sv/dv_utils/dv_fcov_macros.svh"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_controller.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_core.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_core.sv"/>
+        <Attr Name="ImportTime" Val="1706871272"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_counter.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_counter.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_pmp_reset_default.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_pmp_reset_default.svh"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_cs_registers.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_cs_registers.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_csr.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_csr.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_decoder.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_decoder.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Thesis/ibex/rtl/ibex_dummy_instr.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_dummy_instr.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_ex_block.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_ex_block.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_fetch_fifo.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_fetch_fifo.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_icache.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_icache.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_id_stage.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_id_stage.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_if_stage.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_if_stage.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_load_store_unit.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_load_store_unit.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_multdiv_fast.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_multdiv_fast.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_multdiv_slow.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_multdiv_slow.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_pmp.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_pmp.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_prefetch_buffer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_prefetch_buffer.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_wb_stage.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_wb_stage.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/top_pkg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/new/top_pkg.sv"/>
+        <Attr Name="ImportTime" Val="1701349328"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/tlul_pkg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/new/tlul_pkg.sv"/>
+        <Attr Name="ImportTime" Val="1705401071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/noc_itf.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/new/noc_itf.sv"/>
+        <Attr Name="ImportTime" Val="1708437961"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_arbiter_ppc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_arbiter_ppc.sv"/>
+        <Attr Name="ImportTime" Val="1700748730"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_arbiter_tree.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_arbiter_tree.sv"/>
+        <Attr Name="ImportTime" Val="1700748730"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/prim/prim_buf.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/prim/prim_buf.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/prim_cipher_pkg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_count.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_count.sv"/>
+        <Attr Name="ImportTime" Val="1700748730"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_fifo_async.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_fifo_async.sv"/>
+        <Attr Name="ImportTime" Val="1700748731"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/prim_util_pkg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_fifo_sync.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_fifo_sync.sv"/>
+        <Attr Name="ImportTime" Val="1700748731"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_fifo_sync_cnt.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_fifo_sync_cnt.sv"/>
+        <Attr Name="ImportTime" Val="1700748731"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/prim/prim_flop.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/prim/prim_flop.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_flop_2sync.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_flop_2sync.sv"/>
+        <Attr Name="ImportTime" Val="1700748731"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/rtl/prim_generic_buf.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/rtl/prim_generic_buf.sv"/>
+        <Attr Name="ImportTime" Val="1700748734"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_generic_flop.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/Seneca-Lite/seneca_lite_top/seneca_lite_top.srcs/sources_1/imports/sources_1/imports/rtl/prim_generic_flop.sv"/>
+        <Attr Name="ImportTime" Val="1712783735"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_ram_1p_pkg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_ram_1p_pkg.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/prim_util_memload.svh">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_generic_ram_1p.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/rtl/prim_generic_ram_1p.sv"/>
+        <Attr Name="ImportTime" Val="1700748734"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Thesis/prim/rtl/prim_lfsr.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_lfsr.sv"/>
+        <Attr Name="ImportTime" Val="1700748731"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/prim/prim_ram_1p.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/prim/prim_ram_1p.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_ram_1p_adv.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_ram_1p_adv.sv"/>
+        <Attr Name="ImportTime" Val="1700748732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/prim/rtl/prim_secded_inv_22_16_dec.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_22_16_dec.sv"/>
+        <Attr Name="ImportTime" Val="1700748732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/prim/rtl/prim_secded_inv_22_16_enc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_22_16_enc.sv"/>
+        <Attr Name="ImportTime" Val="1700748732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_secded_inv_28_22_dec.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_28_22_dec.sv"/>
+        <Attr Name="ImportTime" Val="1700748732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_secded_inv_28_22_enc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_28_22_enc.sv"/>
+        <Attr Name="ImportTime" Val="1700748732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/prim/rtl/prim_secded_inv_39_32_dec.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_39_32_dec.sv"/>
+        <Attr Name="ImportTime" Val="1700748732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/prim/rtl/prim_secded_inv_39_32_enc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_39_32_enc.sv"/>
+        <Attr Name="ImportTime" Val="1700748732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/prim/rtl/prim_secded_inv_hamming_22_16_dec.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_hamming_22_16_dec.sv"/>
+        <Attr Name="ImportTime" Val="1700748732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/prim/rtl/prim_secded_inv_hamming_22_16_enc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_hamming_22_16_enc.sv"/>
+        <Attr Name="ImportTime" Val="1700748732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/prim/rtl/prim_secded_inv_hamming_39_32_dec.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_hamming_39_32_dec.sv"/>
+        <Attr Name="ImportTime" Val="1700748733"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/prim/rtl/prim_secded_inv_hamming_39_32_enc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/prim/rtl/prim_secded_inv_hamming_39_32_enc.sv"/>
+        <Attr Name="ImportTime" Val="1700748733"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/autogen/tl_main_pkg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/Seneca-Lite/seneca_lite_top/seneca_lite_top.srcs/sources_1/imports/autogen/tl_main_pkg.sv"/>
+        <Attr Name="ImportTime" Val="1712783734"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/tlul/rtl/tlul_adapter_host.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/tlul/rtl/tlul_adapter_host.sv"/>
+        <Attr Name="ImportTime" Val="1701349542"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/tlul_adapter_reg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/Seneca-Lite/seneca_lite_top/seneca_lite_top.srcs/sources_1/imports/sources_1/imports/rtl/tlul_adapter_reg.sv"/>
+        <Attr Name="ImportTime" Val="1712783735"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/tlul_adapter_sram.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/tlul/rtl/tlul_adapter_sram.sv"/>
+        <Attr Name="ImportTime" Val="1701349604"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/imports/Thesis/tlul/rtl/tlul_err.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/Seneca-Lite/seneca_lite_top/seneca_lite_top.srcs/sources_1/imports/sources_1/imports/Thesis/tlul/rtl/tlul_err.sv"/>
+        <Attr Name="ImportTime" Val="1712783735"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/tlul_err_resp.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/tlul/rtl/tlul_err_resp.sv"/>
+        <Attr Name="ImportTime" Val="1700748736"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/tlul_fifo_sync.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/rtl/tlul_fifo_sync.sv"/>
+        <Attr Name="ImportTime" Val="1700748737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/tlul_socket_1n.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/rtl/tlul_socket_1n.sv"/>
+        <Attr Name="ImportTime" Val="1700748737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/tlul_socket_m1.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/rtl/tlul_socket_m1.sv"/>
+        <Attr Name="ImportTime" Val="1700748737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/autogen/xbar_main.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/Seneca-Lite/seneca_lite_top/seneca_lite_top.srcs/sources_1/imports/autogen/xbar_main.sv"/>
+        <Attr Name="ImportTime" Val="1712783734"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Thesis/seneca_lite_single_core.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/seneca_lite_single_core.sv"/>
+        <Attr Name="ImportTime" Val="1708434460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ibex_tracer_pkg.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/rtl/ibex_tracer_pkg.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_macros.svh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_macros.svh"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_assert_standard_macros.svh">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert_standard_macros.svh"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/prim_ram_2p_pkg.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../seneca_lite/seneca_lite.srcs/sources_1/imports/Thesis/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_ram_2p_pkg.sv"/>
+        <Attr Name="ImportTime" Val="1697722137"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="seneca_lite_single_core"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/ibex_core.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

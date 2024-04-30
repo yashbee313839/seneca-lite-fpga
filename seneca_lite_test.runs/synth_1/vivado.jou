@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 20:00:34 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Apr 30 17:17:10 2024
+# Process ID: 7512
+# Current directory: C:/Users/yashb/seneca-test/seneca_lite_test.runs/synth_1
+# Command line: vivado.exe -log seneca_lite_single_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seneca_lite_single_core.tcl
+# Log file: C:/Users/yashb/seneca-test/seneca_lite_test.runs/synth_1/seneca_lite_single_core.vds
+# Journal file: C:/Users/yashb/seneca-test/seneca_lite_test.runs/synth_1\vivado.jou
+# Running On: YASHBEE-MSI, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 8276 MB
+#-----------------------------------------------------------
+source seneca_lite_single_core.tcl -notrace
